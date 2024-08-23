@@ -53,3 +53,16 @@
 <img src="https://skillicons.dev/icons?i=flutter,dart,python,cpp,java,vscode,androidstudio,arduino,github,figma,windows" /> <br>
     <img src="https://skillicons.dev/icons?i=php,html,css,javascript,bootstrap,tailwind,firebase,mysql,flask,postman" /><br>
 </div>
+
+<br/>
+<hr/>
+
+<div align="center">
+  <h2>🐍 My Contributions 🐍</h2>
+  <br>
+  <img alt="snake eating my contributions" src="https://raw.githubusercontent.com/ahmadtechdev/ahmadtechdev/output/github-contribution-grid-snake.svg" />
+  
+  <br/><br/><br/>
+</div>
+
+<hr/>
