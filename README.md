@@ -28,3 +28,12 @@
 - Academic Excellence: Achieved multiple academic awards and scholarships throughout his Bachelor of Computer Science degree at NUML University.
 - Active Learner: Continuously engages in online learning to stay updated with the latest programming advancements.
 - Team Player and Leader: Demonstrated teamwork and leadership skills through participation in sports and academic competitions.
+
+<hr/>
+ 
+<h2 align="center">⚒️ Languages-Frameworks-Tools ⚒️</h2>
+<br/>
+<div align="center">
+<img src="https://skillicons.dev/icons?i=flutter,dart,python,cpp,java,mui,vscode,androidstudio,arduino,github,figma,windows" /> <br>
+    <img src="https://skillicons.dev/icons?i=php,html,css,javascript,bootstrap,tailwind,firebase,mysql,flask,postman" /><br>
+</div>
