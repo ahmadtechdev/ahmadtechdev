@@ -1,4 +1,4 @@
-![logo](https://media.licdn.com/dms/image/v2/D4D16AQEMiUmyfOjZGA/profile-displaybackgroundimage-shrink_350_1400/profile-displaybackgroundimage-shrink_350_1400/0/1674366772104?e=1729728000&v=beta&t=MmhgaVU6WXLQWx0Z8kTm5Abz--mpU_bX4SZuS3kspLs)
+
 <hr/>
 <h1 align="center">
     <img src="https://readme-typing-svg.herokuapp.com/?color=91B302&font=Righteous&size=35&center=true&vCenter=true&width=500&height=70&duration=4000&lines=Hi+There!+👋;+I'm+Ahmad+Raza+Ali!;" />
