@@ -12,7 +12,7 @@
 
 
 - Proficient Flutter Developer: Experienced in building cross-platform mobile applications using Flutter.
-- Full-Stack Web Developer: Skilled in PHP, JavaScript, and WordPress for web development.
+- Full-Stack Web Developer: Skilled in JavaScript, PHP, and WordPress for web development.
 - Programming Foundations: Strong background in C++, Java, and Python.
 - IoT and AI Enthusiast: Basic understanding and keen interest in IoT, AI, and Computer Vision.
 - Academic Excellence: Achieved multiple academic awards and scholarships throughout his Bachelor of Computer Science degree at NUML University.
@@ -49,7 +49,7 @@
   <h2> My Contributions </h2>
   <br>
   <p align="center">
-  <a href="https://github.com/tayyabadev">
+  <a href="https://github.com/ahmadtechdev">
     <img height=250 src="https://github-readme-activity-graph.vercel.app/graph?username=ahmadtechdev&bg_color=0A0F0B&color=68B486&line=91B302&point=FFFFFF&area_color=79FE96&border_radius=24.5&title_color=68B486&border_radius=20px"/>
   </a> 
 </p>
@@ -62,14 +62,14 @@
 <h2 align="center">⚡ Stats ⚡</h2>
 
 <p align="center">
-    <a href="https://github.com/tayyabadev">
+    <a href="https://github.com/ahmadtechdev">
         <img height="180em" src="https://github-readme-stats-git-masterrstaa-rickstaa.vercel.app/api?username=ahmadtechdev&show_icons=true&theme=merko&include_all_commits=true&count_private=true&hide_border=true"/>
         <img height="180em" src="https://github-readme-stats-eight-theta.vercel.app/api/top-langs/?username=ahmadtechdev&langs_count=12&layout=compact&langs_count=8&theme=merko&include_all_commits=true&count_private=true&hide_border=true" />
     </a>
 </p>
 <br>
  <p align="center">
-   <a href="https://github.com/tayyabadev"> 
+   <a href="https://github.com/ahmadtechdev"> 
      <img width="80%" src="https://github-readme-streak-stats.herokuapp.com/?user=ahmadtechdev&show_icons=true&locale=en&layout=demo&theme=merko&hide_border=true" /> 
    </a>  
  </p>
