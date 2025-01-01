@@ -5,6 +5,9 @@ import 'package:folio/configs/configs.dart';
 import 'package:folio/utils/utils.dart';
 
 import 'package:folio/widget/social_links.dart';
+import 'package:provider/provider.dart';
+
+import '../../provider/app_provider.dart';
 
 class HomeTab extends StatelessWidget {
   const HomeTab({Key? key}) : super(key: key);
@@ -12,6 +15,8 @@ class HomeTab extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     Size size = MediaQuery.of(context).size;
+
+    final appProvider = Provider.of<AppProvider>(context);
 
     return SizedBox(
       height: size.height * 1.02,
@@ -51,8 +56,9 @@ class HomeTab extends StatelessWidget {
                     Text(
                       'WELCOME TO MY PORTFOLIO! ',
                       style: AppText.b2!.copyWith(
-                        fontFamily: 'Montserrat',
-                      ),
+                          fontFamily: 'Montserrat',
+                          color:
+                              appProvider.isDark ? Colors.white : Colors.black),
                     ),
                     EntranceFader(
                       offset: const Offset(0, 0),
@@ -69,15 +75,15 @@ class HomeTab extends StatelessWidget {
                 Text(
                   "Ahmad",
                   style: AppText.h1!.copyWith(
-                    fontFamily: 'Montserrat',
-                    fontWeight: FontWeight.w100,
-                  ),
+                      fontFamily: 'Montserrat',
+                      fontWeight: FontWeight.w100,
+                      color: appProvider.isDark ? Colors.white : Colors.black),
                 ),
                 Text(
                   "Raza",
                   style: AppText.h1b!.copyWith(
-                    height: 1,
-                  ),
+                      height: 1,
+                      color: appProvider.isDark ? Colors.white : Colors.black),
                 ),
                 EntranceFader(
                   offset: const Offset(-10, 0),
@@ -94,17 +100,38 @@ class HomeTab extends StatelessWidget {
                           TyperAnimatedText(
                             ' Flutter Developer',
                             speed: const Duration(milliseconds: 50),
-                            textStyle: AppText.b1,
+                            textStyle: AppText.b1!.copyWith(
+                              color: appProvider.isDark
+                                  ? Colors.white
+                                  : Colors.black,
+                            ),
                           ),
                           TyperAnimatedText(
-                            ' UI/UX Enthusiast',
+                            ' Python Enthusiast',
                             speed: const Duration(milliseconds: 50),
-                            textStyle: AppText.b1,
+                            textStyle: AppText.b1!.copyWith(
+                              color: appProvider.isDark
+                                  ? Colors.white
+                                  : Colors.black,
+                            ),
+                          ),
+                          TyperAnimatedText(
+                            ' Programmer',
+                            speed: const Duration(milliseconds: 50),
+                            textStyle: AppText.b1!.copyWith(
+                              color: appProvider.isDark
+                                  ? Colors.white
+                                  : Colors.black,
+                            ),
                           ),
                           TyperAnimatedText(
                             ' A friend :)',
                             speed: const Duration(milliseconds: 50),
-                            textStyle: AppText.b1,
+                            textStyle: AppText.b1!.copyWith(
+                              color: appProvider.isDark
+                                  ? Colors.white
+                                  : Colors.black,
+                            ),
                           ),
                         ],
                         isRepeatingAnimation: true,

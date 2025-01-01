@@ -4,6 +4,9 @@ import 'package:folio/configs/configs.dart';
 
 import 'package:folio/utils/utils.dart';
 import 'package:folio/widget/social_links.dart';
+import 'package:provider/provider.dart';
+
+import '../../provider/app_provider.dart';
 
 class HomeMobile extends StatelessWidget {
   const HomeMobile({Key? key}) : super(key: key);
@@ -11,6 +14,8 @@ class HomeMobile extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     Size size = MediaQuery.of(context).size;
+
+    final appProvider = Provider.of<AppProvider>(context);
 
     return SizedBox(
       height: size.height * 1.02,
@@ -44,6 +49,7 @@ class HomeMobile extends StatelessWidget {
                       "HEY THERE! ",
                       style: AppText.b2!.copyWith(
                         fontFamily: 'Montserrat',
+                        color: appProvider.isDark ? Colors.white : Colors.black,
                       ),
                     ),
                     Space.x!,
@@ -59,12 +65,14 @@ class HomeMobile extends StatelessWidget {
                   style: AppText.h3!.copyWith(
                     fontFamily: 'Montserrat',
                     fontWeight: FontWeight.w100,
+                    color: appProvider.isDark ? Colors.white : Colors.black,
                   ),
                 ),
                 Text(
                   "Raza",
                   style: AppText.h3b!.copyWith(
                     height: 1,
+                    color: appProvider.isDark ? Colors.white : Colors.black,
                   ),
                 ),
                 Space.y!,
@@ -79,17 +87,30 @@ class HomeMobile extends StatelessWidget {
                         TyperAnimatedText(
                           ' Flutter Developer',
                           speed: const Duration(milliseconds: 50),
-                          textStyle: AppText.b1,
+                          textStyle: AppText.b1!.copyWith(
+                            color: appProvider.isDark ? Colors.white : Colors.black,
+                          ),
                         ),
                         TyperAnimatedText(
-                          ' UI/UX Enthusiast',
+                          ' Python ',
                           speed: const Duration(milliseconds: 50),
-                          textStyle: AppText.b1,
+                          textStyle: AppText.b1!.copyWith(
+                            color: appProvider.isDark ? Colors.white : Colors.black,
+                          ),
+                        ),
+                        TyperAnimatedText(
+                          ' Programmer Enthusiast',
+                          speed: const Duration(milliseconds: 50),
+                          textStyle: AppText.b1!.copyWith(
+                            color: appProvider.isDark ? Colors.white : Colors.black,
+                          ),
                         ),
                         TyperAnimatedText(
                           ' A friend :)',
                           speed: const Duration(milliseconds: 50),
-                          textStyle: AppText.b1,
+                          textStyle: AppText.b1!.copyWith(
+                            color: appProvider.isDark ? Colors.white : Colors.black,
+                          ),
                         ),
                       ],
                       repeatForever: true,

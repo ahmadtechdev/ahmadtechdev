@@ -110,6 +110,8 @@ class _ServiceCardState extends State<_ServiceCard> {
               Space.y1!,
               Text(
                 widget.serviceTitle,
+                style: TextStyle(
+                    color: appProvider.isDark ? Colors.white : Colors.black),
                 textAlign: TextAlign.center,
               ),
             ],

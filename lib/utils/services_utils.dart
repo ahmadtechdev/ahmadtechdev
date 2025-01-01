@@ -24,6 +24,7 @@ class ServicesUtils {
     "Python Development\n- Basic tasks and assignments\n- Flask web apps\n- Problem-solving\n- Implementing computer vision models and more...!",
     "Rapid Prototype\n- Working MVP\n- Quick & Working prototype",
   ];
+}
   // static const List<String> servicesDescription = [
   //   "Android app development via Flutter\n- Splash Screen\n- Firebase Auth/Cloud\n- REST APIs\n- Maps integration and more...!",
   //   "Modern UI/UX Designing\n- Adobe XD\n- Mobile & Web designs\n- Interactive UI designs\n- Responsiveness\n- Promo Videos and more..!",
@@ -31,4 +32,3 @@ class ServicesUtils {
   //   "Technical Blog writing\n- Medium blogs\n- Soothing header images\n- SEO friendly\n- Researched topics and more..!",
   //   "Open source GitHub Projects\n- Awesome README.md\n- Well documented\n- Header images and more...!",
   // ];
-}

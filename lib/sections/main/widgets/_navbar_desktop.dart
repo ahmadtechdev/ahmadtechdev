@@ -72,17 +72,20 @@ class _NavBarTablet extends StatelessWidget {
   Widget build(BuildContext context) {
     final drawerProvider = Provider.of<DrawerProvider>(context);
 
+    final appProvider = Provider.of<AppProvider>(context);
     return Padding(
       padding: Space.v!,
       child: Row(
         children: [
           Space.x1!,
           IconButton(
+            // highlightColor: appProvider.isDark ? Colors.white : Colors.black,
             highlightColor: Colors.white54,
             splashRadius: AppDimensions.normalize(10),
             onPressed: () {
               drawerProvider.key.currentState!.openDrawer();
             },
+            color: appProvider.isDark ? Colors.white : Colors.black,
             icon: const Icon(
               Icons.menu,
             ),

@@ -22,6 +22,7 @@ class ProjectCard extends StatefulWidget {
     required this.projectTitle,
     required this.projectDescription,
   }) : super(key: key);
+
   @override
   ProjectCardState createState() => ProjectCardState();
 }
@@ -83,63 +84,73 @@ class ProjectCardState extends State<ProjectCard> {
         child: Stack(
           fit: StackFit.expand,
           children: [
-            Column(
-              mainAxisAlignment: MainAxisAlignment.center,
-              children: [
-                widget.projectIcon != null
-                    ? (width > 1135 || width < 950)
-                        ? Image.asset(
-                            widget.projectIcon!,
-                            height: height * 0.05,
-                          )
-                        : Row(
-                            mainAxisSize: MainAxisSize.min,
-                            children: [
-                              Image.asset(
-                                widget.projectIcon!,
-                                height: height * 0.03,
-                              ),
-                              SizedBox(
-                                width: width * 0.01,
-                              ),
-                              Text(
-                                widget.projectTitle,
-                                style: AppText.b2b,
-                                textAlign: TextAlign.center,
-                              ),
-                            ],
-                          )
-                    : Container(),
-                widget.projectIconData != null
-                    ? Icon(
-                        widget.projectIconData,
-                        color: AppTheme.c!.primary!,
-                        size: height * 0.1,
-                      )
-                    : Container(),
-                (width > 1135 || width < 950)
-                    ? SizedBox(
-                        height: height * 0.02,
-                      )
-                    : const SizedBox(),
-                (width > 1135 || width < 950)
-                    ? Text(
-                        widget.projectTitle,
-                        style: AppText.b2b,
-                        textAlign: TextAlign.center,
-                      )
-                    : Container(),
-                SizedBox(
-                  height: height * 0.01,
-                ),
-                Text(
-                  widget.projectDescription,
-                  textAlign: TextAlign.center,
-                ),
-                SizedBox(
-                  height: height * 0.01,
-                ),
-              ],
+            SingleChildScrollView(
+              child: Column(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  widget.projectIcon != null
+                      ? (width > 1135 || width < 950)
+                          ? Image.asset(
+                              widget.projectIcon!,
+                              height: height * 0.05,
+                            )
+                          : Row(
+                              mainAxisSize: MainAxisSize.min,
+                              children: [
+                                Image.asset(
+                                  widget.projectIcon!,
+                                  height: height * 0.03,
+                                ),
+                                SizedBox(
+                                  width: width * 0.01,
+                                ),
+                                Text(
+                                  widget.projectTitle,
+                                  style: AppText.b2b!.copyWith(
+                                      color: appProvider.isDark
+                                          ? Colors.white
+                                          : Colors.black),
+                                  textAlign: TextAlign.center,
+                                ),
+                              ],
+                            )
+                      : Container(),
+                  widget.projectIconData != null
+                      ? Icon(
+                          widget.projectIconData,
+                          color: AppTheme.c!.primary!,
+                          size: height * 0.1,
+                        )
+                      : Container(),
+                  (width > 1135 || width < 950)
+                      ? SizedBox(
+                          height: height * 0.02,
+                        )
+                      : const SizedBox(),
+                  (width > 1135 || width < 950)
+                      ? Text(
+                          widget.projectTitle,
+                          style: AppText.b2b!.copyWith(
+                              color: appProvider.isDark
+                                  ? Colors.white
+                                  : Colors.black),
+                          textAlign: TextAlign.center,
+                        )
+                      : Container(),
+                  SizedBox(
+                    height: height * 0.01,
+                  ),
+                  Text(
+                    widget.projectDescription,
+                    style: TextStyle(
+                        color: appProvider.isDark ? Colors.white : Colors.black),
+                    textAlign: TextAlign.center,
+                  ),
+                  SizedBox(
+                    height: height * 0.01,
+                  ),
+                ],
+              ),
             ),
             AnimatedOpacity(
               duration: const Duration(milliseconds: 400),
