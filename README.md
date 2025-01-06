@@ -73,6 +73,11 @@
      <img width="80%" src="https://github-readme-streak-stats.herokuapp.com/?user=ahmadtechdev&show_icons=true&locale=en&layout=demo&theme=merko&hide_border=true"/> 
    </a>  
  </p>
+ <p align="center">
+   <a href="https://github.com/ahmadtechdev"> 
+     <img width="80%" src="https://github-readme-streak-stats.herokuapp.com/?user=ahmadtechdev&show_icons=true&locale=en&layout=demo&theme=Onedark&hide_border=true" /> 
+   </a>  
+ </p>
 
 <br>
 
